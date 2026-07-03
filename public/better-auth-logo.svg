@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 160000 2668.4457"
+   class="w-35 h-auto"
+   version="1.1"
+   id="svg1"
+   width="160000"
+   height="2668.4458"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <path
+     class="fill-black dark:fill-white"
+     d="M 0,25.83 V 48.67 H 15.33 V 33.5 h 15 V 48.67 H 61 V 3 H 30.33 v 15.17 h -15 V 3 H 0 Z m 45.67,0 v 7.5 H 30.5 v -15 h 15.17 z"
+     id="path1" />
+</svg>
