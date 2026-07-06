@@ -70,7 +70,7 @@ const CodeBlock = ({
           )}
         </button>
       </div>
-      <pre className="p-5 text-sm leading-relaxed break-words whitespace-pre-wrap">
+      <pre className="p-5 text-sm leading-relaxed wrap-break-word whitespace-pre-wrap">
         <code
           className="font-mono text-neutral-300"
           dangerouslySetInnerHTML={{ __html: code }}
@@ -738,7 +738,9 @@ export function App() {
                     variant="outline"
                     className="h-12 w-full rounded-full border-neutral-300 bg-transparent px-7 text-sm font-semibold text-neutral-900 transition-all hover:bg-neutral-100 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-900"
                   >
-                    View on GitHub
+                    <a href="https://github.com/semaphore-pay">
+                      View on GitHub
+                    </a>
                   </Button>
                 </div>
 
