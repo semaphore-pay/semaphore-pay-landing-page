@@ -215,6 +215,7 @@ export function App() {
               {[
                 { label: "Features", href: "#features" },
                 { label: "Infrastructure", href: "#infrastructure" },
+                { label: "Dashboard", href: "https://dash.semaphorepay.tech" },
                 {
                   label: "Documentation",
                   href: "https://docs.semaphorepay.tech",
@@ -258,6 +259,7 @@ export function App() {
             {[
               { label: "Features", href: "#features" },
               { label: "Infrastructure", href: "#infrastructure" },
+              { label: "Dashboard", href: "https://dash.semaphorepay.tech" },
               {
                 label: "Documentation",
                 href: "https://docs.semaphorepay.tech",
@@ -321,6 +323,14 @@ export function App() {
                 Create Account
               </Button>
               <a
+                href="https://semaphorepay-demo.pages.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm font-medium text-neutral-600 transition-colors hover:text-black dark:text-neutral-400 dark:hover:text-white"
+              >
+                Try the demo <ArrowRight className="size-4" />
+              </a>
+              <a
                 href="https://docs.semaphorepay.tech"
                 className="flex items-center gap-2 text-sm font-medium text-neutral-600 transition-colors hover:text-black dark:text-neutral-400 dark:hover:text-white"
               >
@@ -359,7 +369,7 @@ export function App() {
                   {
                     icon: <Repeat className="size-5" />,
                     title: "Subscriptions & Plans",
-                    desc: "Create plans with trial periods, monthly/yearly billing, and per-feature entitlements. Nomba checkout handled automatically.",
+                    desc: "Create plans with trial periods, monthly/yearly billing, and per-feature entitlements. Nomba checkout with card, bank transfer, USSD, QR, and more. Supports NGN, CDF, and USD.",
                   },
                   {
                     icon: <Percent className="size-5" />,
@@ -532,9 +542,9 @@ export function App() {
               {/* Stats strip */}
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
                 {[
-                  { stat: "~50kb", label: "server bundle" },
+                  { stat: "~60kb", label: "server bundle" },
                   { stat: "<1ms", label: "entitlement check" },
-                  { stat: "4", label: "peer deps (server)" },
+                  { stat: "4", label: "deps (server)" },
                   { stat: "3", label: "SQL dialects" },
                 ].map(({ stat, label }) => (
                   <div
@@ -615,16 +625,17 @@ export function App() {
                   </h2>
                   <p className="mt-4 leading-relaxed text-neutral-600 dark:text-neutral-400">
                     The client SDK is tiny (~2KB gzipped) and works in any
-                    environment — React, Vue, Svelte, or vanilla JS. Call
-                    checkEntitlement once and get the remaining balance, reset
-                    timestamp, and whether the action is allowed.
+                    environment — React, React Native, Vue, Svelte, or vanilla
+                    JS. Call checkEntitlement once and get the remaining balance,
+                    reset timestamp, and whether the action is allowed.
                   </p>
                   <ul className="mt-6 space-y-2.5">
                     {[
                       "Atomic check-and-consume in one round-trip",
                       "Lazy balance resets tied to billing cycles",
                       "Per-feature limits with remaining balance returned",
-                      "Works in React, React Native, and edge runtimes",
+                      "React Native Paywall and EntitlementGuard components",
+                      "Works in React, Vue, Svelte, and edge runtimes",
                     ].map((item) => (
                       <li
                         key={item}
@@ -829,7 +840,15 @@ export function App() {
                     Create Account
                   </Button>
                   <a
-                    href="https://docs.sempahorepay.tech"
+                    href="https://semaphorepay-demo.pages.dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm font-medium text-neutral-600 hover:text-black dark:text-neutral-400 dark:hover:text-white"
+                  >
+                    Try the demo <ArrowRight className="size-4" />
+                  </a>
+                  <a
+                    href="https://docs.semaphorepay.tech"
                     className="flex items-center gap-2 text-sm font-medium text-neutral-600 hover:text-black dark:text-neutral-400 dark:hover:text-white"
                   >
                     View the docs <ArrowRight className="size-4" />
@@ -859,6 +878,7 @@ export function App() {
                     label: "Documentation",
                     href: "https://docs.semaphorepay.tech",
                   },
+                  { label: "Dashboard", href: "https://dash.semaphorepay.tech" },
                   { label: "GitHub", href: "https://github.com/semaphore-pay" },
                   {
                     label: "Support",
